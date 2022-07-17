@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageViewDashboard"
+                        android:layout_width="177dp"
+                        android:layout_height="203dp"
+                        android:gravity="center"
+                        app:srcCompat="@drawable/person" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/name_of_provider_dboard"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:background="#339933"
+                        android:gravity="center"
+                        android:text="NAME OF CLEANER"
+                        android:textAllCaps = "true"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="#FF03DAC5">
+
+                        <RatingBar
+                            android:id="@+id/ratingBarList2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:progressTint="#FF1493"
+                            android:stepSize="0.5" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/service_dboard"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:background="#98FB98"
+                        android:gravity="center"
+                        android:text="Service"
+                        android:textColor="#339933"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/date_dboard"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:background="#FFC0CB"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textColor="#339933"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/time_dboard"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:background="#90EE90"
+                        android:gravity="center"
+                        android:text="Time"
+                        android:textColor="#339933"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/meetup"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:background="#FFC0CB"
+                        android:gravity="center"
+                        android:text="Meet Up"
+                        android:textColor="#339933"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/payment"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:background="#90EE90"
+                        android:gravity="center"
+                        android:text="Not Paid"
+                        android:textColor="#339933"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingTop="5dp">
+
+                        <Button
+                            android:id="@+id/btnCancelAppointment"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:background="#98FB98"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="Cancel"
+                            android:visibility="visible"/>
+
+                        <Button
+                            android:id="@+id/btnMsg"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:background="#98FB98"
+                            android:text="Message"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:visibility="visible"/>
+
+                        <Button
+                            android:id="@+id/btnMarkAsDone"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:background="#FFC0CB"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="Mark as done"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="405dp"
+                            android:layout_height="50dp"
+                            android:background="#FF1493"
+                            android:gravity="center"
+                            android:textColor="#FF03DAC5"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
